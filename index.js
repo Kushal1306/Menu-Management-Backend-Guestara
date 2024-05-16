@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const connectToDB = require('./db')
 const dotenv=require('dotenv');
+const cors=require('cors')
+
 
 const categoryRoutes=require('./routes/categoryRoutes');
 const subcategoryRoutes=require('./routes/subcategoryRoutes');
@@ -11,6 +13,7 @@ dotenv.config();
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors);
 
 const port = process.env.PORT || 3000;
 
