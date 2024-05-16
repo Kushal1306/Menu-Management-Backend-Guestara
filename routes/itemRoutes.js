@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const Item = require('../models/Item');
-const Category = require('../models/Category')
-const Subcategory = require('../models/Subcategory')
+const Category = require('../models/Category');
+const Subcategory = require('../models/Subcategory');
 
 //post request to insert and item into the collection
 router.post("/items", async (req, res) => {

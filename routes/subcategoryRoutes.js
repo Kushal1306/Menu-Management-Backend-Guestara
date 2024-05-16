@@ -1,8 +1,7 @@
 const express=require('express');
 const router=express.Router();
-const Item=require('../models/Item');
-const Category=require('../models/Category')
-const Subcategory=require('../models/Subcategory')
+const Category=require('../models/Category');
+const Subcategory=require('../models/Subcategory');
 
 router.post("/subcategories", async (req, res) => {
     try {
