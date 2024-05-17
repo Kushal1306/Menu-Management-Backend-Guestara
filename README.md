@@ -189,19 +189,19 @@ This repository contains backend code for menu management, including operations 
 
 - **Used MongoDB because of its flexible and documented-based schema, which helped in manipulating data easily with nested JSON object structures.**
 
--**I also used it because MongoDB doesn't have a fixed schema like the other relational databases.**
+- **I also used it because MongoDB doesn't have a fixed schema like the other relational databases.**
 
 ### 3 things that you learned from this assignment?
 
--**I learned to use functions like 'populate' in MongoDB.**
--**learned to resolve conflicts and errors by debugging and exploring what's going wrong.**
--**The code was initially working fine on the local, then deployed on Vercel. There was a naming conflict; I went through the Vercel logs and resolved it.**
--**learned to write cleaner code and learned to design REST APIs in a better way.**
+- **I learned to use functions like 'populate' in MongoDB.**
+- **learned to resolve conflicts and errors by debugging and exploring what's going wrong.**
+- **The code was initially working fine on the local, then deployed on Vercel. There was a naming conflict; I went through the Vercel logs and resolved it.**
+- **learned to write cleaner code and learned to design REST APIs in a better way.**
 
 ### What was the most difficult part of the assignment?
 
--**One of the difficult parts was designing the model schema where a category can have subcategories, which in turn has a couple of items in it.**
+- **One of the difficult parts was designing the model schema where a category can have subcategories, which in turn has a couple of items in it.**
 
 ### What would you have done differently, given more time?
 
--**I would have added authentication part to the backend part and worked on building the basic frontend part.**
+- **I would have added authentication part to the backend part and worked on building the basic frontend part.**
