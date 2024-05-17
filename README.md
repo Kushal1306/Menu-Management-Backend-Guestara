@@ -101,9 +101,7 @@ Backend For Menu Management for Assignment
 {
     "description":"Punjabi Food Originates from a Indian state Punjab where sikh population resides in high numbers",
     "tax":9
-} 
-```
-
+} ```
 - **Response**: Returns the updated subcategory object.
 
 ### Delete Subcategory
