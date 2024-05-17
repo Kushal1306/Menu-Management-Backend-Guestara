@@ -5,6 +5,36 @@ This repository contains backend code for menu management, including operations 
 - **Express.js**
 - **MongoDB as Database**
 
+## How to Run Locally
+
+To run the application locally, follow these steps:
+
+- **1. Clone the repository:**
+
+```
+git clone https://github.com/Kushal1306/Menu-Management-Backend-Guestara.
+
+```
+- **2. Navigate to the project directory:**
+```
+cd Menu-Management-Backend-Guestara
+```
+
+- **3. Install dependencies using npm:**
+```
+npm install
+```
+
+-- **4 Set up your MongoDB database either locally or using a cloud-based service like MongoDB Atlas. Update the MongoDB URI in the .env file.**
+
+- **5. Start the server:**
+```
+npm start
+```
+- ** Now the sever will run on specified port locally**
+
+## API Endpoints
+  
 ## Categories
 
 ### Post a Category
@@ -177,6 +207,8 @@ This repository contains backend code for menu management, including operations 
 }
 ```
 - **Response**: Returns the updated item object.
+
+## Answer's to the questions asked.
 
 ### Delete Item
 
