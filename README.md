@@ -171,7 +171,7 @@ Backend For Menu Management for Assignment
   {
     "description":"Chole bhature is punjabi food. It tastes really good and its also famous in New Delhi.",
     "tax":9
-} ```
+}```
 
 - **Response**: Returns the updated item object.
 
