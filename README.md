@@ -25,7 +25,7 @@ cd Menu-Management-Backend-Guestara
 npm install
 ```
 
--- **4 Set up your MongoDB database either locally or using a cloud-based service like MongoDB Atlas. Update the MongoDB URI in the .env file.**
+- **4 Set up your MongoDB database &  Update the MongoDB URI in the .env file.**
 
 - **5. Start the server:**
 ```
@@ -208,7 +208,6 @@ npm start
 ```
 - **Response**: Returns the updated item object.
 
-## Answer's to the questions asked.
 
 ### Delete Item
 
@@ -216,6 +215,7 @@ npm start
 - **Description**: Delete an item by its unique name.
 - **Response**: Returns a message indicating successful deletion.
 
+## Answer's to the questions asked.
 
 ### Which database have you chosen, and why?
 
