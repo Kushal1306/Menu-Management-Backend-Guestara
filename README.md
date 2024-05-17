@@ -98,10 +98,11 @@ Backend For Menu Management for Assignment
 - **Description**: Update attributes of a specific subcategory.
 - **Request Body**: JSON object with attributes to update.
   ```
-  {
+{
     "description":"Punjabi Food Originates from a Indian state Punjab where sikh population resides in high numbers",
     "tax":9
-} ```
+} 
+```
 
 - **Response**: Returns the updated subcategory object.
 
