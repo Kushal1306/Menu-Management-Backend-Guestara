@@ -1,12 +1,12 @@
-![image](https://github.com/Kushal1306/Menu-Management-Backend-Guestara/assets/95643826/b5d744de-410b-4e27-9324-79f14157f04a)This repository contains backend code for menu management, including operations for categories, subcategories, and items. The routes and data models for Category, Subcategory, and Item were created and handled accordinly
+This repository contains backend code for menu management, including operations for categories, subcategories, and items. The routes and data models for Category, Subcategory, and Item were created and handled accordinly
 
 ### Tech Stack
 - **Node.js**
 - **Express.js**
 - **MongoDB as Database**
 
-- **Live link of backend deployed on vercel: https://menu-management-backend-guestara.vercel.app/
-- ** Postman API Documentation: https://documenter.getpostman.com/view/30343018/2sA3JT2y9a
+- Live link of backend deployed on vercel: https://menu-management-backend-guestara.vercel.app/
+- Postman API Documentation: https://documenter.getpostman.com/view/30343018/2sA3JT2y9a
 ## How to Run Locally
 
 To run the application locally, follow these steps:
