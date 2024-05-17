@@ -98,11 +98,11 @@ Backend For Menu Management for Assignment
 - **Description**: Update attributes of a specific subcategory.
 - **Request Body**: JSON object with attributes to update.
   ```
- {
+  {
     "description":"Punjabi Food Originates from a Indian state Punjab where sikh population resides in high numbers",
     "tax":9
-}
-  ```
+} ```
+
 - **Response**: Returns the updated subcategory object.
 
 ### Delete Subcategory
@@ -118,6 +118,18 @@ Backend For Menu Management for Assignment
 - **Endpoint**: `/items`
 - **Description**: Create a new item under a specified subcategory.
 - **Request Body**: JSON object with attributes: itemName, image, categoryName, subcategoryName, description, taxApplicability, tax, baseAmount, discount.
+```
+{
+    "itemName":"Punjabi Masala chole",
+    
+    "subcategoryName":"Punjabi",
+    "description":"Punjabis take pride in their lassi, and it is made in every household and every restaurant in Punjab. Originally, lassi consumed in Punjab is sweet and creamy, with a generous serving of malai (cream) on top.",
+    "taxApplicability":true,
+    "tax":18,
+    "baseAmount":100,
+    "discount":10
+}
+```
 - **Response**: Returns the created item object.
 
 ### Get All Items
@@ -155,6 +167,12 @@ Backend For Menu Management for Assignment
 - **Endpoint**: `/items/:itemName`
 - **Description**: Update attributes of a specific item.
 - **Request Body**: JSON object with attributes to update.
+  ```
+  {
+    "description":"Chole bhature is punjabi food. It tastes really good and its also famous in New Delhi.",
+    "tax":9
+} ```
+
 - **Response**: Returns the updated item object.
 
 ### Delete Item
