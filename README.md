@@ -167,10 +167,12 @@ Backend For Menu Management for Assignment
 - **Endpoint**: `/items/:itemName`
 - **Description**: Update attributes of a specific item.
 - **Request Body**: JSON object with attributes to update.
-  ```{
+```
+{
     "description":"Chole bhature is punjabi food. It tastes really good and its also famous in New Delhi.",
     "tax":9
-}```
+}
+```
 - **Response**: Returns the updated item object.
 
 ### Delete Item
