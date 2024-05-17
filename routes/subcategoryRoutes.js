@@ -2,7 +2,7 @@ import express from 'express';
 import Category from '../models/category.js';
 import Subcategory from '../models/subcategory.js';
 
-const router=express.Router();
+const router = express.Router();
 
 router.post("/subcategories", async (req, res) => {
     try {
@@ -40,9 +40,7 @@ router.get("/subcategories", async (req, res) => {
 router.get("/subcategories/:categoryName", async (req, res) => {
     try {
         const categoryName = req.params.categoryName;
-        console.log(categoryName);
         const category = await Category.findOne({ categoryName: categoryName }).populate('subCategories');
-        console.log(category);
         if (!category)
             return res.status(404).json({ message: 'no such category found' });
         const subcategoires = category.subCategories;
@@ -56,7 +54,7 @@ router.get("/subcategories/:categoryName", async (req, res) => {
 });
 
 // get request to get a subcategory by its name
-router.get("/subcategories/:subcategoryName", async (req, res) => {
+router.get("/subcategory/:subcategoryName", async (req, res) => {
     try {
         const subcategoryName = req.params.subcategoryName;
         const subcategory = await Subcategory.findOne({ subcategoryName: subcategoryName });
@@ -84,6 +82,20 @@ router.patch("/subcategories/:subcategoryName", async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: 'Internal Server Error' });
     }
+});
+
+//delete request to delete a subcategory
+router.delete("/subcategories/:subcategoryName",async(req,res)=>{
+  try {
+    const subcategoryName=req.params.subcategoryName;
+    const findsubcategory=await Subcategory.findOne({subcategoryName:subcategoryName});
+    if(!findsubcategory)
+        return res.status(404).json({message:'sub category not found'})
+    await Subcategory.deleteOne({subcategoryName:subcategoryName});
+    res.status(201).json({message:'sub category deleted succesfully'});
+  } catch (error) {
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
 });
 
 export default router;

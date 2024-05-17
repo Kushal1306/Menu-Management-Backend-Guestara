@@ -61,5 +61,16 @@ router.patch("/category/:categoryName", async (req, res) => {
 
     }
 });
-
+router.delete("/category/:categoryName",async(req,res)=>{
+    try {
+      const categoryName=req.params.categoryName;
+      const findcategory=await Category.findOne({categoryName:categoryName});
+      if(!findcategory)
+        return res.status(404).json({message:'category not found'})
+      await Category.deleteOne({categoryName:categoryName});
+      res.status(201).json({ message: 'category deleted successfully'});
+    } catch (error) {
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+  });
 export default router;

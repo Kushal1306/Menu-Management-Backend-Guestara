@@ -191,4 +191,18 @@ router.patch("/items/:itemName", async (req, res) => {
         res.status(500).json({ message: 'Internal Server Error' });
     }
 });
+
+router.delete("/items/:itemName",async(req,res)=>{
+    try {
+      const itemName=req.params.itemName;
+      const finditem= await Item.findOne({itemName:itemName});
+      if(!finditem)
+          return res.status(404).json({message:'item not found'})
+      await Item.deleteOne({itemName:itemName});
+      res.status(201).json({ message: 'Item deleted successfully'});
+    } catch (error) {
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+  });
+
 export default router;
