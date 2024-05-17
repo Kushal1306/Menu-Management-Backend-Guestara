@@ -61,6 +61,17 @@ Backend For Menu Management for Assignment
 - **Endpoint**: `/subcategories`
 - **Description**: Create a new subcategory under a specified category.
 - **Request Body**: JSON object with attributes: subcategoryName, categoryName.
+```
+{
+    "categoryName":"Japnese",
+    "subcategoryName":"Rice & Bread",
+     "image":"https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsb2ZmaWNlMTVfaW5kaWFuX2Zvb2Rfb25fd2hpdGVfYmFja2dyb3VuZC1fZTNiYmIxYWItYTlkOS00OTRhLWFmZGYtYjBmZjYyZDcxNTUzLnBuZw.png",
+    "description":"Originates from Japan",
+    "taxApplicability":true,
+    "tax":18,
+    "taxType":"GST"
+}
+```
 - **Response**: Returns the created subcategory object.
 
 ### Get All Subcategories
@@ -86,6 +97,12 @@ Backend For Menu Management for Assignment
 - **Endpoint**: `/subcategories/:subcategoryName`
 - **Description**: Update attributes of a specific subcategory.
 - **Request Body**: JSON object with attributes to update.
+  ```
+ {
+    "description":"Punjabi Food Originates from a Indian state Punjab where sikh population resides in high numbers",
+    "tax":9
+}
+  ```
 - **Response**: Returns the updated subcategory object.
 
 ### Delete Subcategory
