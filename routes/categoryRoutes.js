@@ -1,8 +1,8 @@
-const express = require('express');
-const router = express.Router();
-const Item = require('../models/item');
-const Category = require('../models/category');
+import express from 'express';
+import Category from '../models/category.js';
 
+
+const router = express.Router();
 
 router.post("/category", async (req, res) => {
     try {
@@ -61,4 +61,5 @@ router.patch("/category/:categoryName", async (req, res) => {
 
     }
 });
-module.exports = router;
+
+export default router;

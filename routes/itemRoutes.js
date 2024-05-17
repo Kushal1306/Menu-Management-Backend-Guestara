@@ -1,9 +1,9 @@
-const express = require('express');
-const router = express.Router();
-const Item = require('../models/Item');
-const Category = require('../models/Category');
-const Subcategory = require('../models/Subcategory');
+import express from 'express';
+import Item from '../models/item.js';
+import Category from '../models/category.js';
+import Subcategory from '../models/subcategory.js';
 
+const router = express.Router();
 //post request to insert and item into the collection
 router.post("/items", async (req, res) => {
     try {
@@ -191,6 +191,4 @@ router.patch("/items/:itemName", async (req, res) => {
         res.status(500).json({ message: 'Internal Server Error' });
     }
 });
-
-
-module.exports = router;
+export default router;

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 // schema of subcategory collection
 
@@ -31,6 +31,5 @@ const subcategorySchema = new mongoose.Schema({
     }]
 });
 
-// const Subcategory=mongoose.model('Subcategory',subcategorySchema);
-
-module.exports = mongoose.model('Subcategory', subcategorySchema);
+const Subcategory=mongoose.model('Subcategory',subcategorySchema);
+export default Subcategory;

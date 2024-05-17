@@ -1,7 +1,8 @@
-const express=require('express');
+import express from 'express';
+import Category from '../models/category.js';
+import Subcategory from '../models/subcategory.js';
+
 const router=express.Router();
-const Category=require('../models/Category');
-const Subcategory=require('../models/Subcategory');
 
 router.post("/subcategories", async (req, res) => {
     try {
@@ -84,4 +85,5 @@ router.patch("/subcategories/:subcategoryName", async (req, res) => {
         res.status(500).json({ message: 'Internal Server Error' });
     }
 });
-module.exports=router;
+
+export default router;
