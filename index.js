@@ -20,9 +20,6 @@ app.use(categoryRoutes);
 app.use(subcategoryRoutes);
 app.use(itemRoutes);
 
-app.get("/", async (req, res) => {
-    res.send("hello world");
-});
 //Connecting to the MongoDB 
 connectToDB().then(() => {
     app.listen(port, () => {
