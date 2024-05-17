@@ -1,6 +1,9 @@
-# Menu-Management-Backend-Guestara
-Backend For Menu Management for Assignment
+This repository contains backend code for menu management, including operations for categories, subcategories, and items. The routes and data models for Category, Subcategory, and Item were created.
 
+### Tech Stack
+- **Node.js**
+- **Express.js**
+- **MongoDB as Database**
 
 ## Categories
 
